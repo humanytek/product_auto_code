@@ -1,3 +1,3 @@
 Product Auto Code
 =================
-TODO [IMP]
+Autogenerate product id with variants specs

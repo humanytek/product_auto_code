@@ -1,1 +1,1 @@
-from . import product_auto_code
+from . import product_template

@@ -15,11 +15,11 @@ class ProductTemplate(models.Model):
             size = ''
             for product in self.product_variant_ids:
                 for attribute in product.attribute_value_ids:
-                    if attribute.attribute_id.name == 'Talla':
+                    if attribute.attribute_id.name == 'TALLA':
                         size = attribute.name
                         break
                 for attribute in product.attribute_value_ids:
-                    if attribute.attribute_id.name == 'Color':
+                    if attribute.attribute_id.name == 'COLOR':
                         color = attribute.name
                         break
                 product.default_code = self.default_variants_code + '-' + color + '-' + size

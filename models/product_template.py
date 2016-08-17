@@ -22,4 +22,4 @@ class ProductTemplate(models.Model):
                     if attribute.attribute_id.name == 'COLOR':
                         color = attribute.name
                         break
-                product.default_code = self.default_variants_code + '-' + color + '-' + size
+                product.default_code = self.default_variants_code + '-' + color.split(" ")[1] + '-' + size
